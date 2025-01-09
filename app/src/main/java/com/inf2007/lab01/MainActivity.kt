@@ -72,7 +72,7 @@ fun MainScreen() {
 
                 if (showGreeting) {
                     Greeting(
-                        name = username,
+                        name = submittedName,
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(top = 16.dp)
@@ -99,7 +99,7 @@ fun UserInput(name: String, onNameChange: (String) -> Unit, modifier: Modifier =
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!, Welcome to InF2007!",
+        text = "Hello $name!, Welcome to INF2007!",
         modifier = Modifier
             .fillMaxWidth()
             .testTag("greetingMsg")
